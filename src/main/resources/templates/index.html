@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" th:href="@{/css/style-i.css}" />
+      <title>H O M E</title>
+</head>
+<body>
+
+      <div class="navbar">
+            <span>
+                <a href="/"><img th:src="@{/assets/images/xygen.png}" alt="Logo"></a>
+            </span>
+
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PERSONAL</a></li>
+                <li><a href="#">IDEA</a></li>
+            
+            </ul>
+            <ul>
+                <li><a href="/login">LOGIN</a></li>
+                <li><a href="/login" class="gs-box">GET STARTED</a></li>
+            </ul>
+        </div>
+      
+
+        <div style="margin-top: 200px;">
+
+        
+            <div class="content" sec:authorize="isAuthenticated()" contenteditable="true">
+                <div style="margin-left: 200px;">
+                    <h1 class="editable">Lorem Ipsum</h1>
+                    <p class="editable">Lorem ipsum dolor sit amet consectetur adipisicing elit.  <br>
+                         Quis voluptate consectetur minima est sint hic quisquam earum. <br> 
+                         Mollitia aliquid sint rerum autem esse laudantium ex laboriosam..</p>
+                </div>
+            </div>
+            
+            
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+:root {
+      --bg: #FBFBFB;
+      --accent: #1D1D1D;
+      --text-b: #1D1D1D;
+      --text-w: #FBFBFB;
+      --shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  body {
+      font-family: "Montserrat", sans-serif;
+      margin: 0;
+      padding: 0;
+  }
+  
+  .navbar {
+      position: sticky;
+      top: 0;
+      background-color: var(--bg);
+      color: var(--text-b);
+      border-bottom: solid 2px var(--accent);
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1000;
+  }
+  
+  .navbar span {
+      display: flex;
+      align-items: center;
+  }
+  
+  .navbar img {
+      height: 70px;
+      margin-right: 10px;
+  }
+  
+  .navbar .logo-text {
+      font-weight: bold;
+      font-size: 18px;
+  }
+  
+  .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+  }
+  
+  .navbar li {
+      font-weight: 250;
+      font-size: 40px;
+      margin-right: 190px;
+      border-bottom: none;
+  }
+  
+  .navbar a {
+      text-decoration: none;
+      color: var(--text-b);
+  }
+  
+  .navbar a:hover {
+      color: lightgray;
+  }
+  
+  .navbar ul {
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  .login-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+  }
+  
+  .login-input {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  input {
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+      background-color: #ffffff;
+      width: 600px;
+      height: 70px;
+      padding: 12px 20px;
+      border: 2px solid var(--accent);
+      border-radius: 12px;
+      box-sizing: border-box;
+      font-size: 20px;
+      letter-spacing: 4px;
+      color: var(--text-b);
+      margin-bottom: 20px;
+  }
+  
+  .lg-text {
+      text-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+      letter-spacing: 20px;
+  }
+  
+  .submit-button {
+      text-decoration: none;
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+      text-align: center;
+      display: inline-block;
+      width: 8em;
+      line-height: 2.5em;
+      position: relative;
+      overflow: hidden;
+      border: 2px solid var(--accent);
+      transition: color .5s;
+      z-index: 1;
+      font-size: 17px;
+      border-radius: 6px;
+      font-weight: 500;
+      color: var(--accent);
+  }
+  
+  .submit-button:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      background: var(--accent);
+      height: 150px;
+      width: 200px;
+      border-radius: 50%;
+  }
+  
+  .submit-button:hover {
+      color: #fff;
+  }
+  
+  .submit-button:before {
+      top: 100%;
+      left: 100%;
+      transition: all .7s;
+  }
+  
+  .submit-button:hover:before {
+      top: -30px;
+      left: -30px;
+  }
+
+ input:focus {
+    outline: none;
+}

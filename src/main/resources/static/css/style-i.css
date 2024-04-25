@@ -1,0 +1,92 @@
+:root {
+      --bg: #FBFBFB;
+      --accent: #1D1D1D;
+      --text-b: #1D1D1D;
+      --text-w: #FBFBFB;
+      --shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  body {
+      background-color: var(--bg);
+      font-family: "Montserrat", sans-serif;
+      margin: 0;
+      padding: 0;
+  }
+  
+  .navbar {
+      position: sticky;
+      top: 0;
+      background-color: var(--bg);
+      color: var(--text-b);
+      border-bottom: solid 2px var(--accent);
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1000;
+  }
+  
+  .navbar span {
+      display: flex;
+      align-items: center;
+  }
+  
+  .navbar img {
+      height: 70px;
+      margin-right: 10px;
+  }
+  
+  .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+  }
+  
+  .navbar li {
+    font-weight: 250;
+    font-size: 35px;
+    margin-right: 60px;
+  }
+  
+  .navbar a {
+      text-decoration: none;
+      color: var(--text-b);
+  }
+  
+  .navbar a:hover {
+      color: lightgray;
+  }
+  
+  .navbar ul {
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .gs-box {
+    padding: 5px 20px;
+    border: solid 2px var(--accent);
+    border-radius: 6px;
+}
+
+
+
+.content {
+    outline: none; /* Entferne den Standard-Umriss */
+    border: none; /* Entferne die Standard-Rahmen */
+    padding: 0; /* Entferne den Standard-Innenabstand */
+    margin: 0; /* Entferne den Standard-Außenabstand */
+    font-family: inherit; /* Verwende die Standard-Schriftart der Webseite */
+    font-size: inherit; /* Verwende die Standard-Schriftgröße der Webseite */
+    font-weight: inherit; /* Verwende die Standard-Schriftstärke der Webseite */
+    line-height: inherit; /* Verwende die Standard-Zeilenhöhe der Webseite */
+    color: inherit; /* Verwende die Standard-Textfarbe der Webseite */
+}
+
+.content h1,
+.content p {
+    font-weight: bold; /* Standardmäßig fett */
+}
+
+
