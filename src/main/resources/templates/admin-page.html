@@ -24,19 +24,19 @@
 
         <div class="login-container">
             <h1 class="lg-text">Titel anpassen</h1>
-            <div class="login-input">
-                <input class="li-f" type="text" placeholder="Text ändern">
-            </div>
-            <div class="submit">
-                <button class="submit-button" href="">submit</button>
-            </div>
+            <form th:action="@{/title}" th:object="${textDTO}" method="post"  class="login-input">
+                <input class="li-f" type="text" th:field="*{title}"  th:value="*{title}" placeholder="Text ändern">
+                <div class="submit">
+                    <button class="submit-button" type="submit">submit</button>
+                </div>
+            </form>
             <h1 class="lg-text">Box-Text anpassen</h1>
-            <div class="login-input">
-                <input class="li-f" type="text" placeholder="Text ändern">
-            </div>
-            <div class="submit">
-                <button class="submit-button" href="">submit</button>
-            </div>
+            <form th:action="@{/text}" th:object="${textDTO}" method="post"  class="login-input">
+                <input class="li-f" type="text" th:field="*{text}"  th:value="*{text}" placeholder="Text ändern">
+                <div class="submit">
+                    <button class="submit-button" type="submit">submit</button>
+                </div>
+            </form>
         </div>
 
 

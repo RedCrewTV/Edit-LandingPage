@@ -12,17 +12,10 @@
 <body>
     <div  class="content">
         <div class="content-title">
-            <h1 th:text="${title}">title</h1>
+            <h1 th:utext="${title}">title</h1>
         </div>
-        <div  class="content-box">
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Iste porro doloribus itaque, error quasi alias eum deleniti culpa recusandae velit.
-                Omnis ipsa repellendus maiores libero reiciendis culpa possimus illo dolorem! Ex aliquid
-                fugit harum ullam odio ea quas quae placeat iure saepe incidunt, eligendi nemo voluptatum 
-                quidem odit illum nam iusto nesciunt ipsum doloribus consequuntur sunt. Beatae enim eveniet at! 
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            </p>
+        <div class="content-box">
+            <p th:utext="${boxtext}">text</p>
             <img class="bt" th:src="@{/assets/images/group6.svg}" alt="">
         </div>
 
