@@ -16,7 +16,8 @@ Welcome to our learning project repository! This project is aimed at providing h
 - **HTML**: Markup language for creating the structure and content of web pages.
 - **JavaScript**: Implementing client-side interactivity and dynamic features.
 
-## Developers
+## Developers:
+
 - **Frontend**: https://github.com/J4ron
 - **Backend**: https://github.com/RedCrewTV
 
