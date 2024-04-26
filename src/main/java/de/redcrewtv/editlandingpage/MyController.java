@@ -20,10 +20,6 @@ import java.util.Map;
 @Controller
 public class MyController {
 
-    /*registry.addViewController("/login").setViewName("login");
-        registry.addViewController("/").setViewName("index");
-        registry.addViewController("/error").setViewName("index");
-        registry.addViewController("/admin").setViewName("admin-page");*/
 
     @RequestMapping("/")
     public String index(Model model) {
